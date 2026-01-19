@@ -25,5 +25,31 @@ let myObj = {
 }
 
 const myFunction = function () {
-  console.log("Hello World"  )
+  console.log("Hello World")
 }
+
+// +++++++++++++++++++++++++++++
+
+// Memory
+// Stack (Primitive) Heap (Non-Primitive)
+// Stack => give us a copy of the real value
+// Heap => give us  a refrence of the real value
+
+// primitive
+
+let value = "deepak"
+
+let anotherValue = value
+anotherValue = "deepakone"
+console.log(anotherValue)
+
+let userOne = {
+  email: "devwebwithdeepak@gmail.com",
+  upi: "deepak@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "deepak@gmail.com"
+
+console.log(userOne)
